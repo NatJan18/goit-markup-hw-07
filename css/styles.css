@@ -579,6 +579,12 @@ display: flex;
 .subscription-input {
     width: 358px;
     margin-right: 12px;
+    border: rgba(255, 255, 255, 0.3);
+    height: 50px;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px 16px;
+    color: var(--primary-white-color);
 }
 
 .subscription-label {
@@ -593,7 +599,8 @@ display: flex;
 /* Button  */
 
 .button {
-    display: inline-block;
+    display: flex;
+    min-width: 200px;
     padding-top: 10px;
     padding-right: 32px;
     padding-bottom: 10px;
@@ -607,6 +614,7 @@ display: flex;
     font-size: 16px;
     line-height: 1.88;
     align-items: center;
+    justify-content: center;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
@@ -619,8 +627,8 @@ display: flex;
    
 } */
 
-.button-primary:hover,
-.button-primary:focus {
+.button:hover,
+.button:focus {
     background-color: #188ce8;  
 }
 
@@ -755,12 +763,12 @@ display: flex;
 }
 
 .modal-icon {
-    fill: currentColor;
+    transition: fill var(--transition);
 }
 
-.modal-icon:hover
-.modal-icon:focus {
-    color: var(--accent-color);
+.modal-btn:hover .modal-icon,
+.modal-btn:focus .modal-icon {
+    fill: var(--accent-color);
 }
 
 .modal-text {
@@ -777,7 +785,7 @@ display: flex;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 12px;
 }
 
 .form-area {
@@ -785,7 +793,7 @@ display: flex;
 
     display: flex;
     flex-direction: column;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 
     user-select: none;
 }
@@ -793,13 +801,13 @@ display: flex;
 .form-area-malevich {
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    cursor: pointer;
 
 }
 
 .form-option {
-    position: absolute;
-    top: 0;
-    transform: translateY(-100%);
+    margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.66;
     letter-spacing: 0.01em;
@@ -809,7 +817,7 @@ display: flex;
 .form-icon {
     position: absolute;
     left: 12px;
-    top: 50%;
+    top: 70%;
     transform: translateY(-50%);
     fill: var(--title-text-color);
     transition-property: fill;
@@ -818,12 +826,12 @@ display: flex;
 }
 
 .input {
-    height: 50px;
+    height: 40px;
     max-width: 100%;
     padding: 11px;
     letter-spacing: 0.03em;
     color: var(--secondary-whit-color);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-collor var(--transition);
     background-color: transparent;
@@ -848,10 +856,8 @@ display: flex;
     padding-left: 42px;
 }
 
-.input-icon:hover,
-.input-icon:focus,
-.form-icon:hover,
-.form-icon:focus {
+.input:hover + .form-icon,
+.input:focus + .form-icon {
     fill: var(--accent-color);
 }
 
@@ -870,43 +876,46 @@ display: flex;
 
 .malevich-icon{
     fill: white;
+    /* display: flex;
+    align-content: center;
+    justify-content: center; */
     transition: var(--transition);
     transition-property: fill, box-shadow, background-color, border-color, opacity; 
 }
 
 .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
     border: 2px solid var(--title-text-color);
     border-radius: 3px;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
 }
 
-.checkbox:focus,
-.malevich-icon:focus {
+.checkbox:focus + .malevich-icon {
     box-shadow: 0 0 0 2px var(--accent-color-dark);
 }
 
-.checkbox:checked + .malevich-icon {
+.checkbox:checked + .check {
     background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
 }
 
-.malevich-icon > .use {
-    
+.checkbox:focus + .check {
+    border: 2px solid var(--accent-color);
 }
+
+/* .malevich-icon > .use {
+    
+} */
 
 .button-icon {
     margin-left: 10px;
     margin-right: 10px;
-}
-
-.button-form {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
     fill: var(--primary-white-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    
 }
 
 .button-form:hover,
