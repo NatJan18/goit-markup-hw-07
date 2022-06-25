@@ -579,7 +579,7 @@ display: flex;
 .subscription-input {
     width: 358px;
     margin-right: 12px;
-    border: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     height: 50px;
     border-radius: 4px;
     background-color: transparent;
@@ -793,7 +793,7 @@ display: flex;
 
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 
     user-select: none;
 }
@@ -803,13 +803,14 @@ display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin-bottom: 30px;
 
 }
 
 .form-option {
     margin-bottom: 4px;
     font-size: 12px;
-    line-height: 1.66;
+    line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--primary-text-color);
 }
@@ -817,7 +818,7 @@ display: flex;
 .form-icon {
     position: absolute;
     left: 12px;
-    top: 70%;
+    top: 65%;
     transform: translateY(-50%);
     fill: var(--title-text-color);
     transition-property: fill;
