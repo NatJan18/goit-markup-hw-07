@@ -1,0 +1,47 @@
+/*Main-Nav*/
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation */
+.site-nav {
+    color: $title-text-color;
+    display: flex;
+
+}
+
+.site-nav.item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav .site-nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav .current:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+
+    background: $accent-color;
+    border: 1px solid $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 1px 2px 2px rgba(0, 0, 0, 0.75);
+    border-radius: 2px;
+
+}
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+    transition: color $transition;
+}
+
+.auth-nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
