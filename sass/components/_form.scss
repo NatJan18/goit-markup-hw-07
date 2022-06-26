@@ -150,15 +150,18 @@
     margin-bottom: 0;
 }
 
-.footer-item .subscription {
-    margin-left: auto;
+.subscription-input {
+    width: 358px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 50px;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px 16px;
+    color: $primary-white-color;
 }
 
-.subscription-form {
-    display: flex;
-    align-items: center;
-}
-
-.subscription-form .form-area {
-    margin-bottom: 0;
+.subscription-label {
+    font-size: 16px;
+    color: $secondary-whit-color;
 }
