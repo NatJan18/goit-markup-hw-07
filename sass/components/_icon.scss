@@ -18,3 +18,67 @@
     fill: currentColor;
 }
 
+.do-icon {
+    fill: $primary-white-color;
+}
+
+.do-icon:hover {
+    fill: $primary-white-color;
+    transition: $transition;
+}
+
+.modal-icon {
+    transition: fill $transition;
+}
+
+.form-icon {
+    position: absolute;
+    left: 12px;
+    top: 65%;
+    transform: translateY(-50%);
+    fill: $title-text-color;
+    transition-property: fill;
+    transition: $transition;
+    pointer-events: none;
+}
+
+.input-icon {
+    padding-left: 42px;
+}
+
+.input:hover+.form-icon,
+.input:focus+.form-icon {
+    fill: $accent-color;
+}
+
+.malevich-icon {
+    fill: white;
+    transition: $transition;
+    transition-property: fill, box-shadow, background-color, border-color, opacity;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid $title-text-color;
+    border-radius: 3px;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+}
+
+.checkbox:focus+.malevich-icon {
+    box-shadow: 0 0 0 2px $accent-color-dark;
+}
+
+.checkbox:checked+.check {
+    background-color: $accent-color;
+    border: 2px solid $accent-color;
+}
+
+.checkbox:focus+.check {
+    border: 2px solid $accent-color;
+}
+

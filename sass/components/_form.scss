@@ -1,0 +1,164 @@
+/* Backdrop and modal */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(47, 48, 58, 0.4);
+    visibility: visible;
+    opacity: 1;
+
+    transition: opacity $transition, visibility $transition;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    max-width: 528px;
+    width: 100%;
+    min-height: 581px;
+    background-color: rgba(255, 255, 255, 1);
+
+    transform: translate(-50%, -50%) scale(1);
+
+    transition: transform $transition;
+
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.modal-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.form-area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+.form-area-malevich {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+
+}
+
+.form-option {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $primary-text-color;
+}
+
+.input {
+    height: 40px;
+    max-width: 100%;
+    padding: 11px;
+    letter-spacing: 0.03em;
+    color: $secondary-whit-color;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-collor $transition;
+    background-color: transparent;
+}
+
+.input-textarea {
+    resize: none;
+    min-width: 448px;
+    min-height: 120px;
+}
+
+.input:hover,
+.input:focus {
+    border-color: $accent-color;
+}
+
+.input::placeholder {
+    color: $placeholder-color;
+}
+
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.data-form-text {
+    margin-bottom: 20px;
+}
+
+/* Footer form */
+
+.form-label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    letter-spacing: 0.03rem;
+    transition-property: opacity;
+    transition: $transition;
+    user-select: none;
+    pointer-events: none;
+}
+
+.footer-item .subscription {
+    margin-left: auto;
+}
+
+.subscription-form {
+    display: flex;
+    align-items: center;
+}
+
+.subscription-form .form-area {
+    margin-bottom: 0;
+}
+
+.footer-item .subscription {
+    margin-left: auto;
+}
+
+.subscription-form {
+    display: flex;
+    align-items: center;
+}
+
+.subscription-form .form-area {
+    margin-bottom: 0;
+}
