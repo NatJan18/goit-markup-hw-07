@@ -557,11 +557,11 @@ display: flex;
     pointer-events: none;
 }
 
-.form-input:focus,
+/* .form-input:focus,
 .form-input:not(:placeholder-shown),
 .form-label:focus,
 .form-label:not(:placeholder-shown) {
-}
+} */
 
 .footer-item .subscription {
     margin-left: auto;
