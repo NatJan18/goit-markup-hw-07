@@ -12,6 +12,16 @@
     margin-bottom: -30px;
 }
 
+.button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button-list .item:not(:last-child) {
+    margin-right: 8px;
+}
+
 .project-item {
     width: calc((100% - 90px) / 3);
     flex-basis: calc(100% / 3 - 30px);
