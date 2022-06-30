@@ -3,6 +3,7 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: $futer-bg-color;
 }
 
 .address {
@@ -54,4 +55,8 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+
+.footer-item .subscription {
+    margin-left: auto;
 }

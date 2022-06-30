@@ -4,6 +4,10 @@
     background-color: $end-bg-color;
 }
 
+.team .section {
+    background-color: $end-bg-color;
+}
+
 .team .item {
     flex-basis: calc(100% / 4 - 30px);
     background-color: $primary-white-color;
@@ -32,17 +36,4 @@ p.team-text {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-}
-
-.social-item:not(:last-child) {
-    margin-right: 10px;
-
-}
-
-.footer .social-link {
-    color: rgba(255, 255, 255, 1);
-}
-
-.social-list {
-    display: flex;
 }
